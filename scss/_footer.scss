@@ -1,0 +1,37 @@
+.footer{
+
+    // background-color: black;
+    grid-area: footer;
+    
+    height: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+
+
+    .footer-title{
+
+        font-family: $second_font;
+        color: white;
+
+        .a-footer{
+
+            text-decoration: none;
+            color: white;
+        }
+
+    }
+
+    .icon{
+
+        margin: 1rem;
+        // height: 5rem;
+        color: white;
+            
+    }
+
+   
+
+
+}

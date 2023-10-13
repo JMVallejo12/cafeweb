@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Dream Coffee</title>
+</head>
+<body>
+    
+    <header id="header" class="header">
+        <!-- Navegacion -->
+        <nav class="nav-bar">
+            <ul>
+                <!-- <li><a href="#"><img class="logo" src="./assets/logo.png" alt=""></a></li> -->
+            </ul>
+
+            <ul class="ul-style">
+                <li class="li"><a class="nav-button" href="#ubicacion"><i class="fa-solid fa-location-dot location-button"></i>Ubicación</a></li>
+                <li class="li"><a class="nav-button" href="#reserva"><i class="fa-solid fa-phone location-button"></i>Reservas</a></li>
+            </ul>
+        </nav>
+
+        <!-- Texto de presentacion -->
+        <section class="title-container">
+            <h1 class="title">Dream Coffee</h1>
+
+            <p class="p-header">Desayunos, meriendas y tortas</p>
+        </section>
+
+    </header>
+     <!-- Galeria -->
+    <section class="section-1">
+        <article class="article-1-container">
+            <p class="p-best">LO MEJOR PARA TI</p>
+        </article>
+        
+        <article class="gallery-container-0">
+            <img class="img-1" src="./assets/4.jpg" alt="">
+            <img class="img-2" src="./assets/5.jpg" alt="">            
+        </article>
+
+    </section>   
+    <section class="section-2">        
+
+        <article class="gallery-container">
+            <img class="img-3" src="./assets/1.jpg" alt="">
+            <img class="img-4" src="./assets/2.jpg" alt="">           
+
+        </article>
+
+    </section>
+
+    <section class="section-3">
+
+        <article>
+            <img class="img-5" src="./assets/3.jpg" alt="">
+            <img class="img-6" src="./assets/6.jpg" alt="">
+        </article>
+
+    </section>
+
+    <!-- UBICACION Y RESERVAS -->
+    <section class="section-4">
+
+        <article class="iframe-container" id="ubicacion">
+            <h3 class="h3-map">
+                Nuestra Ubicación
+            </h3>
+            <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d449.2589700461948!2d-73.98570228882524!3d40.75670051434084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258552071bcb3%3A0x5cc7129cc313de1a!2sStarbucks!5e0!3m2!1ses-419!2suy!4v1697217488974!5m2!1ses-419!2suy" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </article>
+
+        <article class="form-container" id="reserva">
+            <h3 class="h3-form">Hace tu reserva</h3>
+
+            <form method="post"> <!-- Asegúrate de especificar el archivo y el método de envío -->
+                <label for="nombre">Nombre:</label>
+                <input class="label" type="text" id="nombre" name="nombre" required><br><br>
+        
+                <label for="telefono">Teléfono:</label>
+                <input class="label" type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required><br><br> <!-- El patrón asegura 10 dígitos numéricos -->
+        
+                <label for="fecha">Fecha:</label>
+                <input class="label" type="date" id="fecha" name="fecha" required><br><br>
+        
+                <label for="hora">Hora:</label>
+                <input class="label" type="time" id="hora" name="hora" required><br><br>
+        
+                <input class="label-button" type="submit" value="Reservar">
+            </form>
+            
+        </article>
+
+    </section>
+
+    <footer class="footer">
+        <h1 class="footer-title">
+            <a class="a-footer" href="#header">Dream Coffe</a>            
+        </h1>
+
+        <article>
+            <!-- Facebook -->
+            <i class="fa-brands fa-square-facebook icon"></i>
+
+            <!-- Twitter -->
+            <i class="fa-brands fa-square-twitter icon"></i>
+
+            <!-- Instagram -->
+
+            <i class="fa-brands fa-instagram icon"></i>
+
+        </article>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
